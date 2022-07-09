@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fraunces&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat";
+  font-weight: 500;
+  height: 100%;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  background: #f3ebe3;
+}
+
+.card-title,
+.card-price {
+  font-family: "Fraunces";
+  font-weight: 700;
+}
+
+.dark-cyan {
+  color: hsl(158, 36%, 37%);
+}
+
+.very-dark-blue {
+  background: hsl(212, 21%, 14%);
+}
+
+.very-graylish-blue {
+  background: hsl(228, 12%, 48%);
+}
+
+.cream {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.text-green-color {
+  color: #3d8168;
+}
+
+.bg-green-color {
+  background-color: #3d8168;
+}
+
+.btn-add-to-cart {
+  @apply mt-5 w-full px-4 py-3 text-center flex items-center justify-center rounded-lg text-sm font-bold hover:bg-[#1A4031] hover:cursor-pointer text-white;
+}

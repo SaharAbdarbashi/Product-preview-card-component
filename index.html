@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body class="body overflow-scroll">
+
+  <div class="w-full lg:h-full flex justify-center lg:items-center">
+    <div
+      class="flex flex-col lg:flex-row w-full lg:w-5/12 h-fit lg:h-3/5 bg-white rounded-xl overflow-hidden my-8 mx-4">
+
+      <!-- image -->
+      <div class="w-full lg:w-1/2 lg:shrink-0">
+        <img src="./images/image-product-desktop.jpg" class=" w-full h-64 lg:h-full object-cover" alt="">
+      </div>
+
+      <div class="w-full lg:w-1/2 p-8">
+        <h4 class="capitalize text-gray-500 text-xs tracking-[.5em]">PERFUME</h4>
+        <h2 class="text-2xl lg:text-3xl font-bold mt-3 card-title">
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p class="text-sm text-gray-500 mt-3">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="my-8 card-price flex items-center">
+          <span class="text-4xl text-green-color w-1/2 text-center">
+            $149.99
+          </span>
+
+          <span class="w-1/2 text-xs self-center text-center font-medium line-through text-gray-500">
+            $169.99
+          </span>
+        </div>
+
+        <div class="btn-add-to-cart bg-green-color">
+          <img src="./images/icon-cart.svg" class="w-4 h-4 justify-end inline-block mr-2" alt="">
+          <span>Add To Cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sahar Abdarbashi</a>.
+  </div>
+
+</body>
+
+</html>
